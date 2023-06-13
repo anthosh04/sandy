@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>String Methods</title>
+</head>
+
+<body>
+    <h1>Java String Methods</h1>
+    <p><b>Length Methods</b></p>
+    <p id="demo"></p>
+    <p><b>Lower case to UpperCase</b></p>
+    <p id="demo1"></p>
+    <p><b>UpperCase to LowerCase</b></p>
+    <p id="demo2"></p>
+    <p><b>replace</b></p>
+    <p id="demo3">My bootstrap</p>
+    <p><b>Slice Methods</b></p>
+    <p id="demo4"></p>
+
+    <script>
+        let fruits = "apple,orange,chocolate";
+        document.getElementById("demo").innerHTML = fruits.length;
+
+        let java = "java script,css,bootstrap";
+        document.getElementById("demo1").innerHTML = java.toUpperCase();
+
+        let css = "Cascading Style Sheet";
+        document.getElementById("demo2").innerHTML = css.toLowerCase();
+
+        let computer = document.getElementById("demo3").innerHTML;
+        document.getElementById("demo3").innerHTML = computer.replace("My bootstrap", "applet");
+
+        let accordion = ("banana","orange","apple","pineapple");
+        docutment.getElementById("demo4").innerHTML = accordion.slice();
+    </script>
+
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <script>
+        let google1 = "gmail";
+        let google2 = "apps";
+        let google3 = google1.Concat(" ", google2);
+        document.getElementById("demo5").innerHTML = google3;
+
+        let text1 = " lets go ";
+        let text2 = text1.trim();
+        document.getElementById("demo6").innerHTML = text2;
+
+        var text = "Lets do it";
+        var text3 = text.charAt(0);
+        document.getElementById("demo7").innerHTML = text3;
+
+        let schools = ["a,b,c,d,e,f"];
+        MyArray = schools.split(",");
+        document.getElementById("demo8").innerHTML = MyArray;
+    </script>
+</body>
+
+</html>

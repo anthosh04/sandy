@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        @media only screen and (max-width:800px) {
+            body {
+                background-color: red;
+                padding: 500px;
+            }
+
+        }
+
+        body {
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 500px;
+
+        }
+
+        form {
+            background-color: rgba(147, 153, 236, 0.918);
+            border-color: black;
+            height: 420px;
+            width: 40%;
+            padding-top: 40px;
+            }
+
+        #log {
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: rgb(10, 6, 6);
+            flex-direction: column;
+        }
+
+        p.log {
+            display: flex;
+            justify-content: center;
+        }
+
+        p.user {
+            text-align: left;
+        }
+
+        p.sign {
+            text-align: center;
+        }
+
+        p.fp {
+            text-align: center;
+        }
+
+        p.login {
+            text-align: center;
+        }
+
+        p.forget {
+            text-align: center;
+        }
+
+        p.signup {
+            text-align: center;
+        }
+
+        p.google {
+            text-align: center;
+        }
+
+        input [type=text] input [type=password] {
+            border-style: solid rgb(131, 243, 215);
+            width: 80%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <form>
+        <p class="log"><b>LOGIN</b></p><br>
+        <div id="log">
+            <p class="user"><i class="fa-solid fa-user"></i> USERNAME </p>
+            <input type="text" placeholder="Type your username" required><br>
+
+            <p class="user"><i class="fa-solid fa-lock"></i> PASSWORD </p>
+            <input type="password" placeholder="Type your password" required>
+        </div>
+        <p class="forget"><a href="www.forget.com" target="_blank">forget?</a></p>
+        <p class="google"><i class="fa-brands fa-google"></i></p>
+        <p class="login"><button style="font-size:15px;">LOGIN</button></p><br>
+        <p class="signup"><a href="www.signup.com">SIGNUP</a></p>
+
+    </form>
+</body>
+
+</html>

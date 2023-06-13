@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 tasks</title>
+</head>
+
+<body>
+    <h2>FIND THE HIGEST NUMBERS</h2>
+    <p id="demo1"></p>
+    <h2>PRINT THE SUM OF THE NUMBERS</h2>
+    <p id="demo2"></p>
+    <h2>FIND THE LENGTH OF AN ARRAY USING LENGTH METHOD</h2>
+    <p id="demo3"></p>
+    <h2>ADD AN ELEMENT TO THE END OF THE ARRY USING</h2>
+    <p id="demo4"></p>
+    <h2>ADD AND ELEMENT USING PUSH METHOD</h2>
+    <p id="demo5"></p>
+    <h2>ADD AN ELEMENT USING POP METHOD</h2>
+    <p id="demo6"></p>
+    <h2>REMOVE THE LAST ELEMENT USING AN ARRAY</h2>
+    <p id="demo7"></p>
+    <h2>FIND THE INDEX OF AND ELEMENT IN AN ARRAY</h2>
+    <p id="demo8"></p>
+    <h2>FIND THE REMOVE AN ELEMENT FROM AN ARRAY BY ITS SPLICE METHOD</h2>
+    <p id="demo9"></p>
+    <h2>CREATE JOIN ALL ELEMENTS OF AN ARAY INTO A STRING USING JOIN METHOD</h2>
+    <p id="demo10"></p>
+    <h2>DISPLAY THE NAME , AGE, CITY , DOB</h2>
+    <p id="demo11"></p>
+
+    <script>
+        var a = (1, 2, 3, 4, 5, 6);
+        document.getElementById("demo1").innerHTML = Math.max(1, 2, 3, 4, 5, 6);
+    </script>
+    <script>
+        let add = 0;
+        const b = [10, 20, 30, 40];
+        b.forEach(myfunction);
+        document.getElementById("demo2").innerHTML = add;
+        function myfunction(item) {
+            add += item;
+        }
+    </script>
+    <script>
+        let fruits = "apple,orange,chocolate";
+        document.getElementById("demo3").innerHTML = fruits.length;
+    </script>
+    <script>
+        let gaming = ["apple,orange,chocolate"];
+        gaming.push("grapes");
+        document.getElementById("demo4").innerHTML = gaming;
+    </script>
+    <script>
+        const gamer = ["apple", "orange", "chocolate", "grapes"];
+        gamer.pop();
+        document.getElementById("demo5").innerHTML = gamer;
+    </script>
+    <script>
+        const vikings = ["apple", "orange", "chocolate", "grapes"];
+        const vikings1 = vikings.unshift();
+        document.getElementById("demo6").innerHTML = vikings1;
+    </script>
+    <script>
+        const car = ["supra", "GTr", "BMW"];
+        const car1 = car.shift();
+        document.getElementById("demo7").innerHTML = car1;
+    </script>
+    <script>
+        const flow = ["dragonball,naruto,saskue,kimetsu"];
+        const flow1 = flow.indexOf();
+        document.getElementById("demo8").innerHTML = flow1;
+    </script>
+    <script>
+        const boogeman = ["sakura", "naruto", "kakashi", "sasuke", "gaara"];
+        const boogeman1 = boogeman.splice(0, 2, "sasuke", "sakura");
+        document.getElementById("demo9").innerHTML = boogeman1;
+    </script>
+    <script>
+        const dragonball = ["santhosh", "pavalan", "adithiya", "vikas"];
+        const dragonball2 = dragonball.join(",");
+        document.getElementById("demo10").innerHTML = dragonball2;        
+    </script>
+    <script>
+        const biodata = { firstname: "santhosh", dept: "cse", college: "GPT" };
+        document.getElementById("demo11").innerHTML = "My Name " + biodata.firstname + "dept " + biodata.dept + "college " + biodata.college;
+    </script>
+</body>
+
+</html>

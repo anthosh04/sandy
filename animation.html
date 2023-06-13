@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>
+        Animations
+    </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            position: relative;
+            animation-name: Anime;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+        }
+
+        .hover:hover {
+            background-color: rgb(122, 235, 182);
+        }
+
+        @keyframes Anime {
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: aqua;
+                left: 200px;
+                top: 0px
+            }
+
+            50% {
+                background-color: red;
+                left: 100px;
+                top: 150px
+            }
+
+            75% {
+                background-color: brown;
+                left: 50px;
+                top: 100px
+            }
+
+            100% {
+                background-color: rgb(230, 198, 20);
+                left: 0px;
+                top: 0px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Css Animations </h1>
+    <div> </div>
+    <div class="hover"> It is a animiation of CSS and animation of colors and shapes and texts</div>
+    <span class="hover">It is a animiation of color and shapes and texts</span>
+</body>
+
+</html>
